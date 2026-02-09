@@ -16,7 +16,7 @@ SmileSync is an end-to-end healthcare data project that simulates a real-world *
 ## Tech Stack
 - **Database:** MySQL  
 - **Programming:** Python (ETL and billing automation)  
-- **Analytics:** MySQL  
+- **Analytics:** SQL  
 - **Visualization:** Tableau  
 - **Domain:** Dental EHR, Insurance Claims, Revenue Cycle Analytics  
 
@@ -64,28 +64,28 @@ SmileSync mirrors real healthcare analytics work:
 ### Raw Data
 Synthetic source files representing dental EHR, clinical encounters, and insurance information:
 - **`Consultation.csv`** - Patient consultation records
-- **`Dept info.csv`** - Departmental details within the hospital
-- **`Diagnosis.csv`** - Diagnosis records associated with patient visits  
-- **`Doc. info.csv`** - Doctor details and their specializations 
-- **`Ins info.csv`** - Insurance details linked to patient records  
+- **`Dept info.csv`** - Departmental-level information
+- **`Diagnosis.csv`** - Diagnoses associated with patient visits  
+- **`Doc. info.csv`** - Provider details and specializations 
+- **`Ins info.csv`** - Insurance plan and payer information  
 - **`Pt. info.csv`** - Patient demographic data
-- **`Treatment.csv`** - Treatment procedures associated with diagnoses
-- **`Treatment Costs.csv`** - Cost details of various treatments
+- **`Treatment.csv`** - Procedures linked to diagnoses
+- **`Treatment Costs.csv`** - Cost details for dental treatments
 
 ### Database Schema
 Core database design and documentation:
 - `01_database_schema.sql` – DDL scripts to create normalized tables and relationships  
-- `SmileSync_ER_Diagram.pdf` – Entity Relationship diagram illustrating the data model  
+- `SmileSync_ER_Diagram.pdf` – Entity Relationship diagram of the data model  
 
 ### Data Pipeline & Analytics
 End-to-end data processing, validation, and analysis workflow:
-- `02_generate_billing.py` – Python script to simulate billing logic, payer adjustments, and patient responsibility  
+- `02_generate_billing.py` – Simulates billing logic, payer adjustments, and patient responsibility  
 - `03_data_cleaning.sql` – Data cleaning and standardization queries  
 - `04_referential_integrity_tests.sql` – Validation checks for primary and foreign key consistency  
 - `05_eda_clinical.sql` – Exploratory analysis of clinical encounters and procedures  
 - `06_eda_revenue.sql` – Revenue, payer mix, and reimbursement analysis  
-- `07_audit_data_integrity.sql` – Audit queries to identify data quality and billing anomalies  
-- `db_config.py` – Database connection and configuration settings  
+- `07_audit_data_integrity.sql` – Audit queries for data quality and billing anomalies  
+- `db_config.py` – Database connection and configuration  
 
 ### Dashboards
 Visualization assets for financial and operational reporting:
