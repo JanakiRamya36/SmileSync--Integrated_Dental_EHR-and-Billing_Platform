@@ -59,16 +59,40 @@ SmileSync mirrors real healthcare analytics work:
 
 ---
 
-## Repository Structure  
-- **`Consultation.txt`** - Patient consultation records.  
-- **`Dept info.txt`** - Departmental details within the hospital.  
-- **`Diagnosis.txt`** - Diagnosis records associated with patient visits.  
-- **`Doc. info.txt`** - Doctor details and their specializations.  
-- **`Ins info.txt`** - Insurance details linked to patient records.  
-- **`Pt. info.txt`** - Patient demographic data.  
-- **`Treatment Costs.txt`** - Cost details of various treatments.  
-- **`Treatment.txt`** - Treatment procedures associated with diagnoses.  
-- **`README.md`** - Documentation of this project.
+## Repository Structure
+
+### Raw Data
+Synthetic source files representing dental EHR, clinical encounters, and insurance information:
+- **`Consultation.csv`** - Patient consultation records
+- **`Dept info.csv`** - Departmental details within the hospital
+- **`Diagnosis.csv`** - Diagnosis records associated with patient visits  
+- **`Doc. info.csv`** - Doctor details and their specializations 
+- **`Ins info.csv`** - Insurance details linked to patient records  
+- **`Pt. info.csv`** - Patient demographic data
+- **`Treatment.csv`** - Treatment procedures associated with diagnoses
+- **`Treatment Costs.csv`** - Cost details of various treatments
+
+### Database Schema
+Core database design and documentation:
+- `01_database_schema.sql` – DDL scripts to create normalized tables and relationships  
+- `SmileSync_ER_Diagram.pdf` – Entity Relationship diagram illustrating the data model  
+
+### Data Pipeline & Analytics
+End-to-end data processing, validation, and analysis workflow:
+- `02_generate_billing.py` – Python script to simulate billing logic, payer adjustments, and patient responsibility  
+- `03_data_cleaning.sql` – Data cleaning and standardization queries  
+- `04_referential_integrity_tests.sql` – Validation checks for primary and foreign key consistency  
+- `05_eda_clinical.sql` – Exploratory analysis of clinical encounters and procedures  
+- `06_eda_revenue.sql` – Revenue, payer mix, and reimbursement analysis  
+- `07_audit_data_integrity.sql` – Audit queries to identify data quality and billing anomalies  
+- `db_config.py` – Database connection and configuration settings  
+
+### Dashboards
+Visualization assets for financial and operational reporting:
+- `SmileSync_Revenue_Integrity_Dashboard.png` – Static snapshot of key revenue insights  
+- `SmileSync_Revenue_Integrity_Dashboard.twbx` – Interactive Tableau dashboard workbook  
+
+---
 
 ## Author
 Janaki Ramya Namburu\
