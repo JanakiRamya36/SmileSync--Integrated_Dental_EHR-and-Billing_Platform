@@ -44,18 +44,10 @@ Primary and foreign keys were used to maintain relational integrity and support 
   - Procedure utilization trends  
   - Visit frequency and provider productivity  
   - Revenue by payer and procedure category  
-- Tableau dashboard highlighting:
-  - Monthly revenue trends  
+- **Live Tableau dashboards connected to MySQL**, highlighting:
+  - Real-time revenue and utilization analysis  
   - Insurance mix and reimbursement patterns  
   - High-volume and high-value procedures  
-
----
-
-## Why This Project Matters
-SmileSync mirrors real healthcare analytics work:
-- Uses **claims-style billing logic**, not simple aggregations  
-- Reflects **outpatient EHR and revenue cycle workflows**  
-- Combines clinical, financial, and operational data analysis   
 
 ---
 
